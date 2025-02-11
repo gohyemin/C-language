@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
+using namespace std;
 
 int main(void){
-    char id[50];
-    scanf("%s", id); // &를 안붙이는 이유는 id 자체가 주소이기 때문이다.
-    printf("%s??!",id); //만약 한 단어 이상 입력되려면 scanf("%[^\n]s", id); 로 사용해야 함. [^\n] 가 엔터가 입력되기 전까지의 문자열이기 때문.
-    
+    string id;
+    cin >> id;
+    cout << id << "??!";
     return 0;
 }
